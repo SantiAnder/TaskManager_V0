@@ -13,7 +13,7 @@ class TaskManager:
         self._tasks = []
         self._next_id = 1
 
-    def add_task(self):
+    def add_task(self, description):
         task = Task(self._next_id, description)
         self._tasks.append(task)
         self._next_id += 1 
